@@ -66,16 +66,23 @@ What you need to assemble this project:
 
 ## Connecting
 **Watch all the polarities printed on the PCB!**
+
 Your toggle-mode set fill sensor connects to FILLTOGGLE and should be mounted on your tank, where you want the "full" water level to be. Just put the sensor with the "touch" side towards the tank and place some tape over it to hold it. Easy peasy. Connect a cable of desired length to reach WassMon.
+
 The other toggle-mode sensor (LIGHTTOGGLE) and the momentary-mode sensor will be mounted into the case. Solder the extra high male pin headers onto them, so that they face away from the "touch" side. Sit them into their sockets into the case and push them a little down. It should be a tight fit and they should hold in. If they are a little loose, use a drop of glue to hold them in place.
+
 Screw the display into the case using some generic screws. Do not overtighten.
+
 
 Now your case should have 5 sensors mounted in it plus a display. All should have male pin headers sticking out and they all should roughly be the same height.
 
+
 Connect the flow sensor directly to the output of your tank and connect a cable of the needed length to reach WassMon.
+
 
 Now populate the PCB, the LED should be mounted last and you should **not** clip off the legs. Leave them long, so the LED pops out from the case a little. This looks better. Using Q1/C2/C3 is optional, depending on your desired code. The WassMon works just fine with 8MHz internal clock for me.
 Take very good care when soldering in the female pin headers into the PCB as they have to align with the male pin headers sticking out from the devices in the case.
+
 
 Next drill a hole into the case where you wand the cables to go through. Use a cable entry guide to prevent bending or breaking cables.
 Fiddle the cables for 12V-IN, the FÜLLSENSOR and the TEMPSENSOR through the cable entry guide and connect to the corresponding Wago clamps. Leave some slack.
