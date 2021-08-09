@@ -87,7 +87,7 @@ Take very good care when soldering in the female pin headers into the PCB as the
 Next drill a hole into the case where you want the cables to go through. Use a cable entry guide to prevent bending or breaking cables.
 Fiddle the cables for 12V-IN, the FÜLLSENSOR and the TEMPSENSOR through the cable entry guide and connect to the corresponding Wago clamps. Leave some slack.
 
-Now mount the PCB into the case, this can be a little tricky, depending how accurate you soldered everything. Align all the pin headers over their corresponding counterpart and push the PCB onto the headers. Be careful not to miss or bend a pin :)
+Now mount the PCB into the case, this can be a little tricky, depending how accurate you soldered everything. Align all the pin headers over their corresponding counterpart and push the PCB onto the headers. Be careful not to miss or bend a pin and don't forget about the LED, what should hit its hole :)
 If you are done, the PCB should hold itself in place very well. Finally attach the back of the case. Again, it should be a tight fit, of not, use a drop of glue.
 
 **Congrats, you are done :)**
