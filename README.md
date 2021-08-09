@@ -23,59 +23,104 @@ In the **pictures** directory you will find some pictures on how this device cou
 What you need to assemble this project:
 
 1x PCB
+
 1x LED 3.5mm ALARMLED
+
 1x ceramic capacitor each:
+
 C1          100n
+
 C2          22p (optional)
+
 C3          22p (optional)
 
+
 1x polarized capacitor each:
+
 C4          47µ
+
 C5          100µ
 
+
 1x diode each:
+
 D1          1N4004
+
 D2          P6KE30A <-- this overvoltage protection diode should match your voltage regulator
 
+
 1x self resetting fuse 100mA F1
+
 1x pin header female 1x3 each:
+
 ENTER
+
 FILLTOGGLE
+
 LIGHTTOGGLE
+
 NEXT
+
 PREV
 
+
 1x pin header male 2x3 JP5
+
 1x pin header female 1x20 JP7
 
+
 1x IC1         ATMEGA328-20P
+
 1x IC2         7805 voltage regulator or compatible (I use one of these: https://www.aliexpress.com/item/1005002556018480.html )
+
 1x IC3         74LS04N Hex INVERTER                                                                     
+
 1x L1          47µ inductor, 100mA
+
 1x Q1          20MHz crystal (optional)
 
+
 1x resistor 1/8W each:
+
 R1          10k
+
 R2          1k
+
 R4          470
+
 R7          4k7
 
+
 1x SG1         buzzer
+
 1x T1          N2222A transistor
 
+
 1x X1 Wago type screw clamp 2 terminal (# W237-102) 12V-IN
+
 1x Wago type screw clamp 3 terminal (# W237-103) each:
+
 X2          FILLSENSE     W237-103        W237-103     WAGO SCREW CLAMP                                     237-103 unknown    18M7116  
+
 X4          TEMP          W237-103        W237-103     WAGO SCREW CLAMP                                     237-103 unknown    18M7116  
+
 X5          AUSlauf       W237-103        W237-103     WAGO SCREW CLAMP                                     237-103 unknown    18M7116  
 
+
 6x capacitive touch sensor (e.g. https://www.aliexpress.com/item/33062790002.html )
+
 **Attention: 2 of these sensores (LIGHTTOGGLE, FILLTOGGLE) have to be configured to toggle ON/OFF, you have to bridge jumper B for that**
+
 5x extra high pin headers male 1x3 (e.g. https://www.aliexpress.com/item/32911455899.html ), I used 17mm height.
+
 1x LCD 12864 128x64 dot matrix (e.g. https://www.aliexpress.com/item/1420941126.html )
+
 1x pin header male 1x20 (soldered to the display)
+
 1x DS18B20 TEMPSENSOR waterproof temperature sensor (optional) with desired cable lenght (e.g. https://www.aliexpress.com/item/1005001621930325.html )
+
 1x YF-B1 FÜLLSENSOR, flow sensor (e.g. https://www.aliexpress.com/item/32887166092.html )
+
 
 ## Connecting
 **Watch all the polarities printed on the PCB!**
