@@ -45,7 +45,7 @@ What you need to assemble this project:
 |1|IC1|ATMEGA328-20P
 |1|IC2|7805 voltage regulator or compatible (e.g. https://www.aliexpress.com/item/1005002556018480.html )
 |1|IC3|74LS04N Hex INVERTER                                                                     
-|1|L1|47µ inductor, 100mA
+|1|L1|47µ inductance, 100mA
 |1|Q1|20MHz crystal (optional)
 |1|R1|1/8W 10k
 |1|R2|1/8W 1k
