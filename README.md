@@ -84,7 +84,7 @@ Now populate the PCB, the LED should be mounted last and you should **not** clip
 Take very good care when soldering in the female pin headers into the PCB as they have to align with the male pin headers sticking out from the devices in the case.
 
 
-Next drill a hole into the case where you wand the cables to go through. Use a cable entry guide to prevent bending or breaking cables.
+Next drill a hole into the case where you want the cables to go through. Use a cable entry guide to prevent bending or breaking cables.
 Fiddle the cables for 12V-IN, the FÜLLSENSOR and the TEMPSENSOR through the cable entry guide and connect to the corresponding Wago clamps. Leave some slack.
 
 Now mount the PCB into the case, this can be a little tricky, depending how accurate you soldered everything. Align all the pin headers over their corresponding counterpart and push the PCB onto the headers. Be careful not to miss or bend a pin :)
@@ -93,7 +93,22 @@ If you are done, the PCB should hold itself in place very well. Finally attach t
 **Congrats, you are done :)**
 
 ## Code
-As you can see, this repo only provides the hardware for WassMon and not the software, as I do not want to force stuff onto people. Use whatever software you like, write your own! It is not that hard. If - for whatever reason - you cannot or do not want to write your own software for the WassMon, get in touch (see below) and I will see what I can do for you.
+As you can see, this repo only provides the hardware for WassMon and not the software, as I do not want to force stuff onto people. Use whatever software you like, write your own! It is not that hard.
+
+Hints:
+
+Use interrupts for the flow sensor, makes things much easier ;) The labels on the case should represent the buttons in the code:
+
+|Label|Meaning|
+|-----|-------|
+|L|Light
+|F|Fill
+|<|Left
+|E|Enter
+|>|Right
+
+
+If - for whatever reason - you cannot or do not want to write your own software for the WassMon, get in touch (see below) and I will see what I can do for you.
 
 ## Problems/Warranty
 Nothing is working? Get a magnifier and check for solder bridges, short circuits, etc. This PCB has been produced and assembled many times and works very nicely. Be very careful when assembling and connecting this hat! You may easily fry something, when mixing connections or ignoring polarity. Double check everything! I can and will not be held responsible for you destroying your equipment!
