@@ -12,7 +12,7 @@ For powering the device you can use a range of voltages, depending on the voltag
 This repo contains all the files you need to produce your own hardware for "Wassmon", **inculding a super cool case as STL files, for printing on a 3D printer!** 
 
 ## Files
-In the **gerber** directory you will find all files that are needed for production by a PCB factory. The directory contains all the single files but as well a ZIP file that you can upload to whatever PCB manufacturer you like. Most factories want you to upload the files as a ZIP archive.
+In the **gerber** directory you will find all files that are needed for production by a PCB factory. The directory contains a ZIP file that you can upload to whatever PCB manufacturer you like. Most factories want you to upload the files as a ZIP archive.
 
 The file **assembly.jpg** in the root directory shows how to assemble the finished PCB.
 
