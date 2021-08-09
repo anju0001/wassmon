@@ -22,12 +22,12 @@ In the **pictures** directory you will find some pictures on how this device cou
 ## Assembly/BOM
 What you need to assemble this project:
 
-- 1x PCB
-- 1x LED 3.5mm ALARMLED
-- 1x ceramic capacitor each:
-- C1          100n
-- C2          22p (optional)
-- C3          22p (optional)
+ - 1x PCB
+ - 1x LED 3.5mm ALARMLED
+ - 1x ceramic capacitor each:
+ - C1          100n
+ - C2          22p (optional)
+ - C3          22p (optional)
 
 - 1x polarized capacitor each:
 - C4          47µ
