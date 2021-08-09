@@ -1,3 +1,4 @@
+
 # "Wassmon" the watermonitor
 
 For my camper truck I was looking for a super accurate monitor, that shows how much water was still left in my tank. When browsing the available solutions, I found out that most devices seem to be from the stone ages using three or four metal rods contacting the water thus showing 25%/50%/75%/100% levels. 
@@ -22,58 +23,46 @@ In the **pictures** directory you will find some pictures on how this device cou
 ## Assembly/BOM
 What you need to assemble this project:
 
- - 1x PCB
- - 1x LED 3.5mm ALARMLED
- - 1x ceramic capacitor each:
- - C1          100n
- - C2          22p (optional)
- - C3          22p (optional)
-
-- 1x polarized capacitor each:
-- C4          47µ
-- C5          100µ
-
-- 1x diode each:
-- D1          1N4004
-- D2          P6KE30A <-- this overvoltage protection diode should match your voltage regulator
-
-- 1x self resetting fuse 100mA F1
-- 1x pin header female 1x3 each:
-- ENTER
-- FILLTOGGLE
-- LIGHTTOGGLE
-- NEXT
--PREV
-
-- 1x pin header male 2x3 JP5
-- 1x pin header female 1x20 JP7
-- 1x IC1         ATMEGA328-20P
-- 1x IC2         7805 voltage regulator or compatible (I use one of these: https://www.aliexpress.com/item/1005002556018480.html )
-- 1x IC3         74LS04N Hex INVERTER                                                                     
-- 1x L1          47µ inductor, 100mA
-- 1x Q1          20MHz crystal (optional)
-
-- 1x resistor 1/8W each:
-- R1          10k
-- R2          1k
-- R4          470
-- R7          4k7
-
-- 1x SG1         buzzer
-- 1x T1          N2222A transistor
-- 1x X1 Wago type screw clamp 2 terminal (# W237-102) 12V-IN
-- 1x Wago type screw clamp 3 terminal (# W237-103) each:
-- X2          FILLSENSE     W237-103        W237-103     WAGO SCREW CLAMP                                     237-103 unknown    18M7116  
-- X4          TEMP          W237-103        W237-103     WAGO SCREW CLAMP                                     237-103 unknown    18M7116  
-- X5          AUSlauf       W237-103        W237-103     WAGO SCREW CLAMP                                     237-103 unknown    18M7116  
-
-- 6x capacitive touch sensor (e.g. https://www.aliexpress.com/item/33062790002.html )
-- **Attention: 2 of these sensores (LIGHTTOGGLE, FILLTOGGLE) have to be configured to toggle ON/OFF, you have to bridge jumper B for that**
-- 5x extra high pin headers male 1x3 (e.g. https://www.aliexpress.com/item/32911455899.html ), I used 17mm height.
-- 1x LCD 12864 128x64 dot matrix (e.g. https://www.aliexpress.com/item/1420941126.html )
-- 1x pin header male 1x20 (soldered to the display)
-- 1x DS18B20 TEMPSENSOR waterproof temperature sensor (optional) with desired cable lenght (e.g. https://www.aliexpress.com/item/1005001621930325.html )
-- 1x YF-B1 FÜLLSENSOR, flow sensor (e.g. https://www.aliexpress.com/item/32887166092.html )
+|       Count    |Name on PCB                    |Part                         |
+|----------------|-------------------------------|-----------------------------|
+|	1|N/A|PCB
+|1|ALARMLED| LED 3.5mm
+|1|C1|100n ceramic
+|1|C2|22p ceramic(optional)
+|1|C3|22p ceramic(optional)
+|1|C4|47µ polarized
+|1|C5|100µ polarized
+|1|D1|1N4004
+|1|D2|P6KE30A <-- this overvoltage protection diode should match your voltage regulator
+|1|F1|fuse 100mA, self resetting
+|1|ENTER|pin header female 1x3
+|1|FILLTOGGLE|pin header female 1x3
+|1|LIGHTTOGGLE|pin header female 1x3
+|1|NEXT|pin header female 1x3
+|1|PREV|pin header female 1x3
+|1|JP5|pin header male 2x3
+|1|JP7|pin header female 1x20
+|1|IC1|ATMEGA328-20P
+|1|IC2|7805 voltage regulator or compatible (e.g. https://www.aliexpress.com/item/1005002556018480.html )
+|1|IC3|74LS04N Hex INVERTER                                                                     
+|1|L1|47µ inductor, 100mA
+|1|Q1|20MHz crystal (optional)
+|1|R1|1/8W 10k
+|1|R2|1/8W 1k
+|1|R4|1/8W 470
+|1|R7|1/8W 4k7
+|1|SG1|buzzer
+|1|T1|N2222A transistor
+|1|X1/12V| Wago type screw clamp 2 terminal (# W237-102)
+|1|X2/FÜLLSENSOR|Wago type screw clamp 3 terminal (# W237-103)
+|1|X4/TEMPSENSOR|Wago type screw clamp 3 terminal (# W237-103)
+|1|X5/AUSLAUF|Wago type screw clamp 3 terminal (# W237-103)
+|6|N/A|capacitive touch sensor (e.g. https://www.aliexpress.com/item/33062790002.html ) **Attention: 2 of these sensores (LIGHTTOGGLE, FILLTOGGLE) have to be configured to toggle ON/OFF, you have to bridge jumper B for that**
+|5|N/A|extra high pin headers male 1x3 (e.g. https://www.aliexpress.com/item/32911455899.html ), I used 17mm height.
+|1|N/A|LCD 12864 128x64 dot matrix (e.g. https://www.aliexpress.com/item/1420941126.html )
+|1|N/A|pin header male 1x20 (soldered to the display)
+|1|N/A|ds18b20 TEMPSENSOR waterproof temperature sensor (optional) with desired cable lenght e.g.( https://www.aliexpress.com/item/1005001621930325.html )
+|1|N/A|YF-B1 FÜLLSENSOR, flow sensor (e.g. https://www.aliexpress.com/item/32887166092.html )
 
 ## Connecting
 **Watch all the polarities printed on the PCB!**
